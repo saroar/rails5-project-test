@@ -68,3 +68,5 @@ gem 'slim-rails'
 gem 'rspec-rails'
 
 gem 'twitter-bootstrap-rails'
+
+gem 'simple_form'

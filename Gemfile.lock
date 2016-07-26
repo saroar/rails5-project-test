@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/activerecord-hackery/ransack.git
-  revision: 6a059ba95610f3839a2aaae9562d90b50910b594
+  revision: 833d500dc77a659a53af9c8feecb33b751e756f6
   specs:
     ransack (1.8.0)
       actionpack (>= 3.0)
@@ -107,7 +107,7 @@ GEM
     builder (3.2.2)
     byebug (9.0.5)
     cd (1.0.1)
-    clipboard (1.1.0)
+    clipboard (1.1.1)
     code (0.9.0)
       coderay (~> 1.1)
       method_source (~> 0.8, >= 0.8.2)
@@ -154,7 +154,7 @@ GEM
     formtastic (3.1.4)
       actionpack (>= 3.2.13)
     formtastic_i18n (0.6.0)
-    globalid (0.3.6)
+    globalid (0.3.7)
       activesupport (>= 4.1.0)
     has_scope (0.7.0)
       actionpack (>= 4.1, < 5.1)
@@ -292,6 +292,9 @@ GEM
     ruby_version (1.0.1)
     sass (3.4.22)
     sexp_processor (4.7.0)
+    simple_form (3.2.1)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     slim (3.0.7)
       temple (~> 0.7.6)
       tilt (>= 1.3.3, < 2.1)
@@ -368,6 +371,7 @@ DEPENDENCIES
   ransack!
   rspec-rails
   sass-rails!
+  simple_form
   slim-rails
   spring
   spring-watcher-listen (~> 2.0.0)

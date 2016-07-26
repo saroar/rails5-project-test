@@ -9,7 +9,6 @@
 #
 
 class WorkingEstimate < ApplicationRecord
-
   has_many :project_working_estimates
   has_many :projects, through: :project_working_estimates
 end

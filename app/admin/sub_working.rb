@@ -1,14 +1,14 @@
 ActiveAdmin.register SubWorking do
-  permit_params :sub_working_title, :working_hour, specialist_ids: []
+  permit_params :id, :title, :working_hour, default_sp_ids: []
 
   form do |f|
-    f.inputs 'Create New SubWorking' do
+    f.inputs 'Create Sub Working' do
       f.input :title
-      f.input :specialists, as: :check_boxes, collection: Specialist.all.map { |s| [s.name, s.id] }
-
       f.input :working_hour
-    end
 
-    f.actions
+      f.input :default_sp_ids, :as=>:check_boxes, collection: Specialist.all.map { |i| [i.name, i.id] }
+
+      f.actions
+    end
   end
 end
