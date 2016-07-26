@@ -13,5 +13,4 @@ ActiveAdmin.register WorkingEstimate do
 #   permitted
 # end
 
-
 end
