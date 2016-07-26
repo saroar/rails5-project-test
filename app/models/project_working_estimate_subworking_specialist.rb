@@ -15,7 +15,6 @@ class ProjectWorkingEstimateSubworkingSpecialist < ApplicationRecord
   belongs_to :project_working_estimate_subworking
   belongs_to :specialist
 
-
   before_create :set_default_data
 
   private

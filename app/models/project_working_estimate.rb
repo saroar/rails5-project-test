@@ -17,10 +17,10 @@ class ProjectWorkingEstimate < ApplicationRecord
   has_many :project_working_estimate_subworkings
   has_many :sub_workings, through: :project_working_estimate_subworkings
 
-
   before_create :set_title
 
   private
+
   def set_title
     self.working_title = self.working_estimate.working_title
   end

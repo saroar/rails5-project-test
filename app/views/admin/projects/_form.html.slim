@@ -5,7 +5,7 @@
     = f.input :project_name
     = f.input :end_date, as: :date_picker
     = f.input :company_id, as: :select, collection: Company.all.map {|c| [c.name, c.id]}
-    = f.input :project_working_estimates, as: :check_boxes, collection: ProjectWorkingEstimate.all.map {|c| [c.working_title, c.id]}
+    = f.input :project_working_estimates, as: :check_boxes, collection: WorkingEstimate.all.map {|c| [c.working_title, c.id]}
 
   #working-estimates
     /= f.inputs 'Working Estimates' do

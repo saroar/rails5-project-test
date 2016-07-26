@@ -18,13 +18,11 @@ class ProjectWorkingEstimateSubworking < ApplicationRecord
   has_many :project_working_estimate_subworking_specialists
   has_many :specialists, through: :project_working_estimate_subworking_specialists
 
-
   before_create :set_default_data
 
   private
   def set_default_data
     self.sub_working_title = self.sub_working.title
     self.sub_working_hour = self.sub_working.working_hour
-
   end
 end
