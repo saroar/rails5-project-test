@@ -99,6 +99,13 @@ GEM
     arbre (1.1.1)
       activesupport (>= 3.0.0)
     arel (7.1.0)
+    axlsx (2.1.0.pre)
+      htmlentities (~> 4.3.1)
+      nokogiri (>= 1.4.1)
+      rubyzip (~> 1.1.7)
+    axlsx_rails (0.5.0)
+      actionpack (>= 3.1)
+      axlsx (>= 2.0.1)
     bcrypt (3.1.11)
     binding.repl (3.0.0)
     bourbon (4.2.7)
@@ -160,6 +167,7 @@ GEM
       actionpack (>= 4.1, < 5.1)
       activesupport (>= 4.1, < 5.1)
     hirb (0.7.3)
+    htmlentities (4.3.4)
     i18n (0.7.0)
     instance (0.2.0)
     interactive_editor (0.0.10)
@@ -294,6 +302,7 @@ GEM
     ruby_parser (3.8.2)
       sexp_processor (~> 4.1)
     ruby_version (1.0.1)
+    rubyzip (1.1.7)
     sass (3.4.22)
     sexp_processor (4.7.0)
     simple_form (3.2.1)
@@ -360,6 +369,8 @@ PLATFORMS
 DEPENDENCIES
   activeadmin!
   annotate
+  axlsx (= 2.1.0.pre)
+  axlsx_rails
   byebug
   coffee-rails (~> 4.2)
   devise
@@ -376,6 +387,7 @@ DEPENDENCIES
   rails (~> 5.0.0)
   ransack!
   rspec-rails
+  rubyzip (~> 1.1.0)
   sass-rails!
   simple_form
   slim-rails
