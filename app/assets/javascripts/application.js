@@ -14,6 +14,5 @@
 //= require jquery_ujs
 //= require_tree .
 //= require turbolinks
-//= stub active_admin
 //= require jquery
 //= require bootstrap-sprockets
