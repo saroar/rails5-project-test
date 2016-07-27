@@ -396,7 +396,6 @@ DEPENDENCIES
   to_factory
   turbolinks (~> 5)
   twitter-bootstrap-rails
-  tzinfo-data
   uglifier (>= 1.3.0)
   web-console
 
