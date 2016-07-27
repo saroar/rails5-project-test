@@ -1,6 +1,5 @@
 ActiveAdmin.register Project do
-  permit_params :id, :company_id, :start_date, :doc_name, :project_name, :end_date, active_project_working_estimate_ids: []
-  #TODO: add here project_working_estimate_attributes with title
+  permit_params :id, :company_id, :start_date, :doc_name, :project_name, :end_date, active_project_working_estimate_ids: [], project_working_estimate_attributes: [:id, :working_title]
 
   form partial: 'form'
 
