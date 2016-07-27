@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160726140405) do
+ActiveRecord::Schema.define(version: 20160726232151) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -82,8 +82,10 @@ ActiveRecord::Schema.define(version: 20160726140405) do
     t.integer  "working_estimate_id"
     t.integer  "project_id"
     t.string   "working_title"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.boolean  "active",              default: false, null: false
+    t.index ["project_id", "working_estimate_id"], name: "unique_p_w_e_index", unique: true, using: :btree
     t.index ["project_id"], name: "index_project_working_estimates_on_project_id", using: :btree
     t.index ["working_estimate_id"], name: "index_project_working_estimates_on_working_estimate_id", using: :btree
   end
