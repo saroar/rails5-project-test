@@ -28,6 +28,9 @@ end
 
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'cancancan'
+gem 'rolify'
+
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'ransack',             github: 'activerecord-hackery/ransack'
 gem 'draper',              '> 3.x'
