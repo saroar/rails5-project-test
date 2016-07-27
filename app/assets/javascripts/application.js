@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_tree .
 //= require twitter/bootstrap
 //= require turbolinks
-//= require_tree .
 //= stub active_admin
