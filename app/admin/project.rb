@@ -58,10 +58,10 @@ ActiveAdmin.register Project do
   controller do
   #  before_action :set_project
   #
-     def update
+    def update
   #     print "smth"
   #     @project.update(params[:project].to_h)
-    project_working_estimate_ids = params.require(:project)[:active_project_working_estimate_ids].select(&:present?)
+      project_working_estimate_ids = params.require(:project)[:active_project_working_estimate_ids].select(&:present?)
 
       ProjectWorkingEstimate.where(project_id: params[:id]).where.not(id: project_working_estimate_ids).update_all(active: false)
 
@@ -72,7 +72,7 @@ ActiveAdmin.register Project do
       @project.update(params[:project].to_h)
 
       redirect_to admin_project_path(params[:id])
-      #super
+
      end
   #
   #   private

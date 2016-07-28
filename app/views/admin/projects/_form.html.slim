@@ -9,10 +9,12 @@
 
 
     = f.inputs 'Working Estimates' do
-      = f.semantic_fields_for :project_working_estimates do |we|
-       br
-        = we.input :working_title
-        = we.input :project_working_estimate_subworking_ids, as: :check_boxes, collection: SubWorking.all.map { |s| [s.title, s.id] }
+      # = f.semantic_fields_for :project_working_estimates do |we|
+      = f.semantic_fields_for @project.project_working_estimates do |we|
+        br
+
+        = we.input :working_title, collection: @project.active_project_working_estimates_titles.shift
+        /= we.input :project_working_estimate_subworking_ids, as: :check_boxes, collection: SubWorking.all.map { |s| [s.title, s.id] }
 
         br
         br
