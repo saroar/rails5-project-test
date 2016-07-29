@@ -12,6 +12,8 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui
+ *= require formtastic
  */
 
  // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"

@@ -1,5 +1,9 @@
 #= require active_admin/base
 
+$ ->
+  $('.datepicker').datepicker beforeShowDay: $.datepicker.noWeekends
+  return
+
 $(document).ready ->
   $('[name=\'project[project_working_estimate_ids][]\'').map (index, el) ->
     $(el).click (event)->
